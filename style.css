@@ -53,18 +53,15 @@ button:hover {
 /* Slides */
 
 .slide {
-  float: left;
   width: 100%;
   height: 100vh;
 }
 
 .first {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./img/cameras-wall.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./img/cameras-wall.jpeg);
   background-size: cover;
   background-position: center center;
 }
-
-
 
 .second {
   background: #75aaff;
@@ -87,8 +84,7 @@ button:hover {
 }
 
 .third {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
-     url(./img/camera-single-wall.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./img/camera-single-wall.jpeg);
   background-size: cover;
 }
 
@@ -96,21 +92,35 @@ button:hover {
   position: relative;
   display: inline-block;
   margin: 10px 5px;
-  width: 30%;
+  width: 25%;
 }
 
 
 /* Slide content */
 
 .center {
-  margin: 0 auto;
-  display: table-cell;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
-  width: 100vw !important;
+  width: 100%;
   text-align: center;
   color: whitesmoke;
+}
+
+.center section {
+  width: 100%;
 }
 
 
@@ -129,16 +139,16 @@ button:hover {
 
 @media only screen and (max-width: 642px) {
   ul {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
   .scroller {
     scroll-snap-type: none;
   }
   .first {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./img/mobile-cameras-wall.jpg);
-  background-size: cover;
-  background-position: center center;
-}
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./img/mobile-cameras-wall.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
   .second ul {
     margin: 25px auto;
     display: block;

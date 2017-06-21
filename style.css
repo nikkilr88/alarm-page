@@ -1,0 +1,171 @@
+/* Universal Styles */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 5px 0;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 22px;
+  font-family: 'Lato';
+}
+
+ul {
+  font-size: 20px;
+  font-family: 'Lato';
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 3px;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.material-icons {
+  position: relative;
+  font-size: 24px;
+  top: 5px;
+}
+
+
+/* Slides */
+
+.slide {
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+.first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./img/cameras-wall.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+.second {
+  background: #75aaff;
+}
+
+.second ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.second ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.second ul li:before {
+  content: '\f14a';
+  font-family: "FontAwesome";
+  margin: 0 5px;
+}
+
+.third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+     url(./img/camera-single-wall.jpeg);
+  background-size: cover;
+}
+
+.third span {
+  position: relative;
+  display: inline-block;
+  margin: 10px 5px;
+  width: 30%;
+}
+
+
+/* Slide content */
+
+.center {
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  height: 100vh;
+  width: 100vw !important;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+/* Slide container */
+
+.scroller {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+}
+
+@media only screen and (max-width: 642px) {
+  ul {
+  font-size: 18px;
+}
+  .scroller {
+    scroll-snap-type: none;
+  }
+  .second ul {
+    margin: 25px auto;
+    display: block;
+    width: 95%;
+    padding: 0;
+  }
+  .third span {
+    display: block;
+    width: 95%;
+    text-align: left;
+    background: whitesmoke;
+    border-radius: 3px;
+    color: #444;
+    padding: 5px 10px;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+  .third span h3,
+  .third span p {
+    margin: 5px;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  p {
+    font-size: 19px;
+    font-family: 'Lato';
+  }
+}

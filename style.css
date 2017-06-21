@@ -134,6 +134,11 @@ button:hover {
   .scroller {
     scroll-snap-type: none;
   }
+  .first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(./img/mobile-cameras-wall.jpg);
+  background-size: cover;
+  background-position: center center;
+}
   .second ul {
     margin: 25px auto;
     display: block;

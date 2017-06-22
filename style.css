@@ -126,9 +126,18 @@ button:focus {
   width: 25%;
 }
 
-.contact .fa{
+.contactIcons .fa{
   font-size: 2rem;
   margin: 25px 10px;
+}
+
+.contact .fa:hover {
+  cursor: pointer;
+}
+
+.contact a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 
@@ -172,6 +181,26 @@ button:focus {
   scroll-snap-type: mandatory;
   scroll-snap-destination: 100% 0%;
 }
+
+/*Contact section*/
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.active {
+  color: whitesmoke;
+}
+
+.inactive {
+  color: rgba(255,255,255,0.3);
+}
+
+/*Styles for mobile devices*/
 
 @media only screen and (max-width: 642px) {
   ul {

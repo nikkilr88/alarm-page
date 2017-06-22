@@ -180,7 +180,7 @@ button:focus {
 }
 
 .contactViews span {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -228,10 +228,10 @@ button:focus {
   .third span {
     display: block;
     width: 95%;
-    text-align: left;
-    background: whitesmoke;
-    border-radius: 3px;
-    color: #444;
+    text-align: center;
+    /*background: whitesmoke;*/
+    /*border-radius: 3px;*/
+    /*color: #444;*/
     padding: 5px 10px;
     margin: 20px auto;
     box-sizing: border-box;
@@ -250,6 +250,6 @@ button:focus {
     font-size: 1.15rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

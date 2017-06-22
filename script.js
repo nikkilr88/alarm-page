@@ -25,7 +25,19 @@ $(document).ready(function() {
     });
     
     
-    //Contact section click functions
+    //Back to top button
+    $(window).scroll(function(){
+        $(window).scrollTop() >= $('.third').offset().top ? $('#backToTop').show('fade') : $('#backToTop').hide('fade');
+    });
+    
+    $('#backToTop').on('click', function(){
+        $('html,body').animate({
+            scrollTop: 0
+        },1000);
+    });
+    
+    
+    //Contact section icon click functions
     $('.fa-facebook').on('click', function() {
         var $this = $('.fa-facebook');
         switchActive($this);

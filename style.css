@@ -126,20 +126,6 @@ button:focus {
   width: 25%;
 }
 
-.contactIcons .fa{
-  font-size: 2rem;
-  margin: 25px 10px;
-}
-
-.contact .fa:hover {
-  cursor: pointer;
-}
-
-.contact a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
 
 /* Slide content */
 
@@ -183,6 +169,25 @@ button:focus {
 }
 
 /*Contact section*/
+
+.contactIcons .fa{
+  font-size: 2rem;
+  margin: 25px 10px;
+}
+
+.contact .fa:hover {
+  cursor: pointer;
+}
+
+.contactViews span {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact a {
+  color: whitesmoke;
+  text-decoration: none;
+}
 
 .hidden {
   display: none;

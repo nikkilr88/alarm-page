@@ -8,62 +8,75 @@ Add 'back to top' button
 */
 
 $(document).ready(function() {
-    
-    
+
+
     //Scroll to contact section
     $('#contactBtn').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.contact').offset().top
-        },0);
+        }, 0);
     });
 
     //Scroll to info section
     $('#learnMore').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.third').offset().top
-        },0);
+        }, 0);
     });
-    
-    
+
+
     //Back to top button
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         $(window).scrollTop() >= $('.third').offset().top ? $('#backToTop').show('fade') : $('#backToTop').hide('fade');
     });
-    
-    $('#backToTop').on('click', function(){
+
+    $('#backToTop').on('click', function() {
         $('html,body').animate({
             scrollTop: 0
-        },0);
+        }, 0);
     });
-    
-    
+
+
     //Services Info PopUp 
-    $('#close').on('click', function(){
-        $('#servicesInfo').hide();
+    $('#close').on('click', function() {
+        $('#servicesInfo').hide()
+        //Re-enable scrolling
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
     });
-    
-    $('#gps').on('click', function(){
+
+    //Disable scrolling when div pops up
+    $('#servicesList li').on('click', function() {
+        $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+    });
+
+    $('#gps').on('click', function() {
         $('#content').html('<h4>GPS</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
         $('#servicesInfo').show();
     });
-    $('#cercas').on('click', function(){
+    $('#cercas').on('click', function() {
         $('#content').html('<h4>Cercas Electrificadas</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
         $('#servicesInfo').show();
     });
-    $('#alarma').on('click', function(){
+    $('#alarma').on('click', function() {
         $('#content').html('<h4>Alarmas</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
         $('#servicesInfo').show();
     });
-    $('#audio').on('click', function(){
+    $('#audio').on('click', function() {
         $('#content').html('<h4>Audio</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
         $('#servicesInfo').show();
     });
-    $('#estim').on('click', function(){
+    $('#estim').on('click', function() {
         $('#content').html('<h4>Estimaciones</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
         $('#servicesInfo').show();
     });
-    
-    
+
+
     //Contact section icon click functions
     $('.fa-facebook').on('click', function() {
         var $this = $('.fa-facebook');
@@ -74,13 +87,13 @@ $(document).ready(function() {
     $('.fa-phone').on('click', function() {
         var $this = $('.fa-phone');
         switchActive($this);
-         $('#info').html('<a href="tel:5214771176978">477.117.6978</a>');
+        $('#info').html('<a href="tel:5214771176978">477.117.6978</a>');
     });
 
     $('.fa-whatsapp').on('click', function() {
         var $this = $('.fa-whatsapp');
         switchActive($this);
-         $('#info').html('<a href="https://api.whatsapp.com/send?phone=5214771176978" target="_blank">Mándanos un mensaje via Whatsapp <i class="fa fa-external-link"></i></a></span>');
+        $('#info').html('<a href="https://api.whatsapp.com/send?phone=5214771176978" target="_blank">Mándanos un mensaje via Whatsapp <i class="fa fa-external-link"></i></a></span>');
     });
 
 

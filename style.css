@@ -228,6 +228,28 @@ button:focus {
   cursor: pointer;
 }
 
+
+/*Services Info*/
+
+#servicesInfo {
+  position: fixed;
+  height: 95%;
+  width: 95%;
+  background: whitesmoke;
+  z-index: 9999;
+  padding: 5%;
+  color: #555;
+  display: none;
+}
+
+#close {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
 /*Styles for mobile devices*/
 
 @media only screen and (max-width: 642px) {

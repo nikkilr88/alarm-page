@@ -41,19 +41,19 @@ $(document).ready(function() {
     $('.fa-facebook').on('click', function() {
         var $this = $('.fa-facebook');
         switchActive($this);
-        $('.contactViews').find('.fb').removeClass('hidden').addClass('showing');
+        $('#info').html('<a href="https://www.facebook.com/alarmsistemasdeseguridad/" target="_blank">Visíta nuesta página en Facebook <i class="fa fa-external-link"></i></a>');
     });
 
     $('.fa-phone').on('click', function() {
         var $this = $('.fa-phone');
         switchActive($this);
-        $('.contactViews').find('.phone').removeClass('hidden').addClass('showing');
+         $('#info').html('<a href="tel:5214771176978">477.117.6978</a>');
     });
 
     $('.fa-whatsapp').on('click', function() {
         var $this = $('.fa-whatsapp');
         switchActive($this);
-        $('.contactViews').find('.whats').removeClass('hidden').addClass('showing');
+         $('#info').html('<a href="https://api.whatsapp.com/send?phone=5214771176978" target="_blank">Mándanos un mensaje via Whatsapp <i class="fa fa-external-link"></i></a></span>');
     });
 
 
@@ -63,5 +63,4 @@ $(document).ready(function() {
 function switchActive(toSwitch) {
     toSwitch.parent().find('.fa').removeClass('active').addClass('inactive');
     toSwitch.removeClass('inactive').addClass('active');
-    $('.contactViews').find('span').removeClass('showing').addClass('hidden');
 }

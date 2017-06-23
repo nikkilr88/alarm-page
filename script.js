@@ -37,6 +37,33 @@ $(document).ready(function() {
     });
     
     
+    //Services Info PopUp 
+    $('#close').on('click', function(){
+        $('#servicesInfo').hide();
+    });
+    
+    $('#gps').on('click', function(){
+        $('#content').html('<h4>GPS</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
+        $('#servicesInfo').show();
+    });
+    $('#cercas').on('click', function(){
+        $('#content').html('<h4>Cercas Electrificadas</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
+        $('#servicesInfo').show();
+    });
+    $('#alarma').on('click', function(){
+        $('#content').html('<h4>Alarmas</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
+        $('#servicesInfo').show();
+    });
+    $('#audio').on('click', function(){
+        $('#content').html('<h4>Audio</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
+        $('#servicesInfo').show();
+    });
+    $('#estim').on('click', function(){
+        $('#content').html('<h4>Estimaciones</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat lectus eu lectus accumsan tempus. Donec lacinia libero nec maximus tempus.</p> <p>Donec libero purus, ornare at tempor non, tincidunt in est. Curabitur sagittis arcu quis arcu lobortis varius. Aliquam sem tellus, luctus vitae tempus vel, malesuada bibendum neque.</p>');
+        $('#servicesInfo').show();
+    });
+    
+    
     //Contact section icon click functions
     $('.fa-facebook').on('click', function() {
         var $this = $('.fa-facebook');

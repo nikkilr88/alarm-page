@@ -233,13 +233,23 @@ button:focus {
 
 #servicesInfo {
   position: fixed;
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   background: whitesmoke;
   z-index: 9999;
-  padding: 5%;
   color: #555;
   display: none;
+}
+
+#content {
+  position: relative;
+  padding: 20px;
+  width: 200px;
+}
+
+#content h4, #content p {
+  width: 90%;
+  padding-left: 25px;
 }
 
 #close {

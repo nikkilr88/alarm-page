@@ -14,14 +14,14 @@ $(document).ready(function() {
     $('#contactBtn').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.contact').offset().top
-        }, 0);
+        }, 500);
     });
 
     //Scroll to info section
     $('#learnMore').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.third').offset().top
-        }, 0);
+        }, 500);
     });
 
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
     $('#backToTop').on('click', function() {
         $('html,body').animate({
             scrollTop: 0
-        }, 0);
+        }, 500);
     });
 
 

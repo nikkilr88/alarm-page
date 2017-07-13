@@ -38,6 +38,16 @@ $(document).ready(function() {
 
 
     //Services Info PopUp 
+    var ranOnce = false;
+    $(window).on("scroll", function() {
+        
+        if( $(window).scrollTop() >= $('.second').offset().top && ranOnce === false){
+            $('#scrollMsg').show('slow').delay(2500).hide("slow"); 
+            ranOnce = true;
+        }
+        
+    });
+    
     $('#close').on('click', function() {
         $('#servicesInfo').hide()
         //Re-enable scrolling
